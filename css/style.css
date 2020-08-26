@@ -1,1 +1,353 @@
-/* styling will be added soon */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0081bd1a;
+}
+
+p{
+    font-family: 'Varela Round', sans-serif;
+}
+
+#header{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background: #b6e8ff;
+    position: fixed;
+    top: 0;
+}
+
+#header-logo-div{
+    flex: 1;
+    display: flex;
+    margin: auto 0px;
+    align-items: center;
+}
+
+#header-logo-div img {
+    width: 50px;
+    height: 50px;
+}
+
+#header-logo-div h1{
+    margin: auto 0px;
+    align-items: center;
+    font-family: 'Fredoka One', cursive;
+    color: #08b1bd;
+    font-weight: 500;
+}
+
+#nav-bar{
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#nav-bar ul{
+    list-style: none;
+    display: flex;
+    margin: auto 0px;
+    align-items: center;
+}
+
+#nav-bar ul li{
+    margin: 10px;
+    font-size: 20px;
+}
+
+#nav-bar ul li a{
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #0082BD;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 6px;
+}
+
+#nav-bar ul li a:hover {
+    background: #0082BD;
+    color: white;
+}
+
+#home{
+    width: 90%;
+    height: 80vh;
+    margin: 90px auto 0px auto;
+    display: flex;
+}
+
+#introduction {
+    flex: 1;
+    margin: auto 30px;
+    align-items: center;
+}
+
+#intro {
+    margin-bottom: 60px;
+}
+
+#intro h2{
+    font-size: 45px;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+    color: #08B1BD;
+}
+
+#intro p{
+    margin:  10px 20px 10px 0px;
+    font-size: 18px;
+    color: #464545;
+    font-weight: 300;
+}
+
+#buttons button{
+    padding: 14px 36px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#buttons button:hover{
+    cursor: pointer;
+}
+
+#buttons .button1{
+    border: solid;
+    border-width: 2px;
+    border-color: #0082BD;
+    background: transparent;
+    font-weight: 700;
+    color: #0082BD;
+}
+
+#buttons .button2{
+    border: solid;
+    border-width: 2px;
+    background: #0082BD;
+    font-weight: 700;
+    color: white;
+}
+
+#image-div{
+    flex: 1;
+    margin: auto 0px;
+    align-items: center;
+}
+
+#image-div img{
+    width: 600px;
+    border-radius: 20px;
+}
+
+#video-section{
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 10px;
+    background: #0081bd88;
+    border-radius: 6px;
+}
+
+#video-section h2{
+    margin: 20px;
+    font-size: 42px;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+    color: white;
+}
+
+#video-section p{
+    margin-bottom: 20px;
+}
+
+#video {
+    width: 60%;
+    height: 65vh;
+    border: none;
+}
+
+.ytlink{
+    text-decoration: none;
+    color: #464545;
+}
+
+.ytlink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#subscription{
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#subscription h2{
+    font-size: 42px;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+    color: #0082BD;
+}
+
+#form {
+    padding: 10px
+}
+
+#form label {
+    font-size: 25px;
+    color: #464545;
+}
+
+#form input {
+    font-size: 20px;
+    border: solid;
+    border-width: 2px;
+    border-color: #0082BD;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+#submit{
+    width: 100px;
+    border: solid;
+    border-width: 2px;
+    background: #0082BD;
+    font-weight: 700;
+    color: white;
+    border-radius: 3px;
+}
+
+footer{
+    width: 100%;
+    background: #025a8370;
+    padding: 10px;
+}
+
+footer p{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #F1F1F1;
+    height: 100%;
+    text-align: center;
+}
+
+#heart{
+    width: 20px;
+}
+
+footer p a{
+    color: #0082BD;
+}
+
+/* On screens that are 1125px wide or less */
+@media screen and (max-width: 1125px) {
+    
+    #home{
+        flex-direction: column;
+    }
+    
+    #intro {
+        text-align: center;
+    }
+
+    #buttons{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    #image-div{
+        text-align: center;
+    }
+
+    #image-div img{
+        width: 70%;
+    }
+
+    #video-section{
+        margin-top: 270px;
+    }
+
+    
+}
+
+/* On screens that are 990px wide or less */
+@media screen and (max-width: 990px){
+    #header-logo-div h1{
+        font-size: 20px;
+    }
+
+    #video {
+        width: 90%;
+        height: 65vh;
+        border: none;
+    }
+
+    #nav-bar ul li a{
+        padding: 10px 10px;
+        font-size: 20px;
+    }
+
+    #video-section h2{
+        font-size: 30px;
+    }
+}
+
+/* On screens that are 660px wide or less */
+@media screen and (max-width: 660px) {
+
+    #video-section{
+        margin-top: 70px;
+    }
+
+    #video{
+        height: 280px;
+    }
+
+}
+
+/* On screens that are 500px wide or less */
+@media screen and (max-width: 500px) {
+
+    #header-logo-div h1{
+        font-size: 18px;
+    }
+
+    #intro h2{
+        font-size: 36px;
+    }
+
+    #video {
+        width: 90%;
+        height: 65vh;
+        border: none;
+    }
+
+    #nav-bar ul li a{
+        padding: 10px 10px;
+        font-size: 16px;
+    }
+    
+    #video-section{
+        margin-top: 100px;
+    }
+
+    #video-section h2{
+        font-size: 20px;
+    }
+
+    #video{
+        height: 210px;
+    }
+
+    #subscription h2{
+        font-size: 30px;
+    }
+}
