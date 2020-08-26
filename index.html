@@ -1,13 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Potato Power - Product Landing Page</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500;700&family=Fredoka+One&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+
+    <header id="header">
+        <div id="header-logo-div">
+            <img id="header-img" src="./img/potato_logo.png" alt="logo">
+            <h1>Potato Power</h1>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#video-section" class="nav-link">Video</a></li>
+                <li><a href="#subscription" class="nav-link">Subscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div id="introduction">
+
+                <div id="intro">
+                    <h2>Potato is the Future</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus, iusto expedita
+                        mollitia.
+                    </p>
+                </div>
+
+                <div id="buttons">
+                    <button class="button1">Potato PC</button>
+                    <button class="button2">Potato CPU</button>
+                </div>
+
+            </div>
+
+            <div id="image-div">
+                <img src="./img/intro_image.jpg" alt="intro_image">
+            </div>
+
+        </section>
+
+        <section id="video-section">
+            <h2>Have a Look at the Awesomeness of Potato</h2>
+            <iframe id="video" src="https://www.youtube.com/embed/xQj52ctl_CE"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Credit : <a class="ytlink" href="https://www.youtube.com/watch?v=xQj52ctl_CE&t=72s">YouTube Channel -
+                    Rampant Gaming</a> </p>
+        </section>
+
+        <section id="subscription">
+            <h2>Get Some Potato Today</h2>
+            <form class="membership" id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">
+                    Email Address:
+                    <input id="email" type="email" name="email" placeholder="Email address" required>
+                </label>
+                <p><input id="submit" type="submit"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Thank you for Visiting.
+        </p>
+        <p>
+            Build with
+            <img id="heart"
+                src="./img/heart.gif"
+                alt="heart"> by
+            <a href="https://github.com/JoykishanSharma" target="_blank">Joykishan Sharma.</a>
+        </p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="./js/script.js"></script>
+
 
 </body>
 
